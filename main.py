@@ -3246,7 +3246,7 @@ Item(type='clothing', amount=1, id='bag-n_registrationavatars2023furrytail', acc
         
     async def on_user_leave(self, user: User) -> None:
         print(f"{user.username} saiu da sala")
-        await self.highrise.chat(f"🎀Volta @{user.username}! 😭")
+        await self.highrise.chat(f"Foi bom estar com vc @{user.username}! 😭")
         await self.highrise.send_emote(random.choice(emote))
 
         await asyncio.sleep(100)
