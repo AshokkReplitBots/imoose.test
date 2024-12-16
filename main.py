@@ -2430,7 +2430,7 @@ Item(type='clothing', amount=1, id='bag-n_registrationavatars2023furrytail', acc
                       else:
                           await self.highrise.chat(f"o usuário {target_username} Não esta disponível na sala. ")
               else:
-                  await self.highrise.chat("quantia inválida!, use apenas 1-10!\n\napenas moderadores podem dar quantias acima de 10!") 
+                  await self.highrise.chat("quantia inválida!, use apenas 1-100!\n\napenas moderadores podem dar quantias acima de 10!") 
                   await self.highrise.chat("![react|heart|wink|wave|clap|thumbs] @username quantia.")
 
         if message.lower().startswith(("!wave","/wave","-wave","wave","Wave")): 
@@ -2439,7 +2439,7 @@ Item(type='clothing', amount=1, id='bag-n_registrationavatars2023furrytail', acc
               num_hearts = int(parts[-1])
               target_username = parts[1].strip('@').lower()
 
-              if 1 <= num_hearts <= 10:
+              if 1 <= num_hearts <= 100:
                   for _ in range(num_hearts):
                       target_user = None
                       response = await self.highrise.get_room_users()
@@ -2453,7 +2453,7 @@ Item(type='clothing', amount=1, id='bag-n_registrationavatars2023furrytail', acc
                       else:
                           await self.highrise.chat(f"o usuário {target_username} Não esta disponível na sala. ")
               else:
-                  await self.highrise.chat("quantia inválida!, use apenas 1-10!\n\napenas moderadores podem dar quantias acima de 10!")
+                  await self.highrise.chat("quantia inválida!, use apenas 1-100!\n\napenas moderadores podem dar quantias acima de 10!")
                   await self.highrise.chat("![react|heart|wink|wave|clap|thumbs] @username quantia.")
               
         if message.lower().startswith(("!thumbs","/thumbs","-thumbs","Thumbs","thumbs")):
@@ -2462,7 +2462,7 @@ Item(type='clothing', amount=1, id='bag-n_registrationavatars2023furrytail', acc
               num_hearts = int(parts[-1])
               target_username = parts[1].strip('@').lower()
 
-              if 1 <= num_hearts <= 10:
+              if 1 <= num_hearts <= 100:
                   for _ in range(num_hearts):
                       target_user = None
                       response = await self.highrise.get_room_users()
@@ -2476,7 +2476,7 @@ Item(type='clothing', amount=1, id='bag-n_registrationavatars2023furrytail', acc
                       else:
                           await self.highrise.chat(f"o usuário {target_username} Não esta disponível na sala. ")
               else:
-                  await self.highrise.chat("quantia inválida!, use apenas 1-10!\n\napenas moderadores podem dar quantias acima de 10!")
+                  await self.highrise.chat("quantia inválida!, use apenas 1-100!\n\napenas moderadores podem dar quantias acima de 10!")
                   await self.highrise.chat("![react|heart|wink|wave|clap|thumbs] @username quantia.")
               
         if message.lower().startswith(("!heart","/heart","-heart","heart","Heart","❤️")):
@@ -2484,7 +2484,7 @@ Item(type='clothing', amount=1, id='bag-n_registrationavatars2023furrytail', acc
               num_hearts = int(parts[-1])
               target_username = parts[1].strip('@').lower()
 
-              if 1 <= num_hearts <= 10:
+              if 1 <= num_hearts <= 100:
                   for _ in range(num_hearts):
                       target_user = None
                       response = await self.highrise.get_room_users()
@@ -2498,7 +2498,7 @@ Item(type='clothing', amount=1, id='bag-n_registrationavatars2023furrytail', acc
                       else:
                           await self.highrise.chat(f"o usuário {target_username} Não esta disponível na sala. ")
               else:
-                  await self.highrise.chat("quantia inválida!, use apenas 1-10!\n\napenas moderadores podem dar quantias acima de 10")
+                  await self.highrise.chat("quantia inválida!, use apenas 1-100!\n\napenas moderadores podem dar quantias acima de 10")
                   await self.highrise.chat("![react|heart|wink|wave|clap|thumbs] @username quantia.")
               
         if message.lower().lstrip().startswith(("-wrong","-fashion","-gravity","-icecream","-casual","-kiss","-no","-yes","-laughing","-hello","-wave","-shy","-tired","-flirty","-flirtywave","-confused","-charging","-hot","-snowball","-curtsy","-bow","-model","-greedy","-snowangel","-pose7","-cute","-superpose","-frog","-snake","-eneryball","-maniac","-teleport","-float","-singing","-telekinesis","-sing","-singalong","-shuffle","-tiktok10","-tik10","-cutey","-pose5","-pose3","-pose1","-pose8","-blackpink","-dontstartnow","-tik2","-tiktok2","-pennywise","-russian","-shopping","-shop","-letsgoshopping","-enthused","-celebrate","-gagging","-flex","-cursing","-thumbsup","-angry","-punk","-zombie","-sit","-fight","-swordfight","-macarena","-weird","-savage","-tiktok8","-tik8","-viralgroove","-viral","-tik9","-tiktok9","-saunter","-astronaut","-penguin","-airguitar","-guitar","-boxer","-pose9","-stargazer","-star","-sayso","-uwu","-jetpack","-fairytwirl","-fairyfloat","-launch","-smooch","-tiktok","-attention","-salute","-pushit","-foryou","-gift","-touch","-kawaii","-repose","-surprise","-sleigh","-hyped","-jingle","-gottago","-time","-timejump","-party","-thumbsub","-scritchy","-skating","-bitnervous","-creepy","-bashful","-revelations","-watch")):
